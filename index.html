@@ -1,0 +1,228 @@
+<!-- Description: Lab 1: Music -->
+<!-- Author: Chong Sheng & Shania -->
+<!-- Date: 27/9/2023 -->
+<!-- Validated: Ok 27/9/2023 -->
+
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+
+
+
+<head>
+
+	<title>Music</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Chong Sheng & Shania">
+	<meta name="description" content="Popular Music Genres">
+	<meta name="keywords" content="popular, music, genres, and, recommendations">
+	<link rel="stylesheet" href="style.css">
+	
+	
+</head>
+
+<body>
+
+	<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Musestar.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="feedback.html"> Contact Us</a> </li>
+        </ul>
+		</nav>
+<figure>
+<img src="images/Musestar.Logo.png" alt="musestarlogo"  width="250" height="105" >
+</figure>
+
+	<header>
+		<h1>Popular Music Genres</h1>
+		
+
+		<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Pop')"><a href="Pop.html">Pop</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Hip_Hop')"><a href="HipHop.html">Hip Hop</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Rock')"><a href="Rock.html">Rock</a></button>
+	</div>
+	
+
+	
+	</header>
+
+   
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   
+   <script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+   
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="item">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2023/11/NewJeans-1.jpeg?w=1581&h=1054&crop=1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABeat6-Ov3CK6YhNoXGNjYdlJ2_5LtLH0bAJ8Sl5WaRfAnzaSmLpnCsllt3xlcKzqOqmYBy3U_nha64Dvg5Ek-UccQkxVZ1oUAA3A.jpg?r=616" alt="">
+            </div>
+            <div class="item">
+                <img src="https://images.pexels.com/photos/2240768/pexels-photo-2240768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="item">
+                <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+			
+			
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+	<article>
+	
+		<p>Have you ever wondered what the most popular music genre is? Who is the most popular artist of those genres? 
+		What is their most popular creations? Well this website provides the answers you need for these questions. But lets start off with other commonly asked questions.</p>
+		
+		<h2>What is music?</h2>
+		<p>Music are vocal or instrumental sounds(or both) combined in such a way as to produce beauty of form, harmony, and expression of emotion</p>
+		
+		<h3>How is music produced?</h3>
+		<p>Music is made or created by using sound from human voices or instruments. 
+		Sounds are grouped together to form melody, harmony, and rhythm, in combination 
+		together and recorded they become a song that is composed. Songs are then finetuned and 
+		edited to perfection.</p>
+		
+		<h3>How long does it take for song production?</h3>
+		<p>If offered a good amount of production time and comprehensive mastering of the music, it should take no more than one week. 
+		It is entirely dependent on one's mood. Some have created numerous tunes in a single day, while others have taken months to complete. However, one week is usually plenty.</p>
+		
+		<h3>How much do music artists earn?</h3>
+		<p>Since the earnings of musicians varies from country to country, he compiled it into a table for a better understanding</p>
+			
+			<table>
+			<caption>Range of music artist's salary</caption>
+			https://www.indeed.com/career-advice/finding-a-job/how-musicians-make-money
+				<tr>
+					<th class="red">City, Country</th>
+					<th class="red">Salary per year(USD)</th>
+				</tr>
+				
+				<tr>
+					<td>New York,NY</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/New-York--NY" target="_blank">$30,786</a></td>
+				</tr>
+				
+				<tr>
+					<td>Washington, DC</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Washington--DC" target="_blank">$79,920</a></td>
+				</tr>
+				
+				<tr>
+					<td>Los Angeles, CA</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Los-Angeles--CA" target="_blank">$53,378</a></td>
+				</tr>
+				
+				<tr>
+					<td>Chicago, IL</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Chicago--IL" target="_blank">$52,602</a></td>
+				</tr>
+				
+				<tr>
+					<td>San Diego, CA</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/San-Diego--CA" target="_blank">$33,500</a></td>
+				</tr>
+				
+				<tr>
+					<td>Baltimore, MD</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Baltimore--MD" target="_blank">$40,521</a></td>
+				</tr>
+				
+				<tr>
+					<td>Charlotte, NC</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Charlotte--NC" target="_blank">$19,615</a></td>
+				</tr>
+				
+				<tr>
+					<td>Houston, TX</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Houston--TX" target="_blank">$20,221</a></td>
+				</tr>
+				
+				<tr>
+					<td>Miami, FL</td>
+					<td><a href="https://www.indeed.com/career/musician/salaries/Miami--FL" target="_blank">$26,870</a></td>
+				</tr>
+				
+				
+			</table>
+			
+			<h4> About this website </h4>
+			<p>We would like to share what kind of music are in the trend these days, lately Korean and Japanese music has taken over the worlds becoming a huge part of Southeast Asia such as Malaysia pop culture.</p>
+			
+			
+			<h4> There are many type of genre but we be focusing on these</h4>
+				<ul>
+						<li><h5>Korean</h5>
+						  <ul>
+							<li>Kpop</li>
+							<li>K-hiphop</li>
+							<li>Rock</li>
+						  </ul>
+						</li>
+						<li><h5>Japanese</h5>
+						  <ul>
+							<li>Jpop</li>
+							<li>J-hiphop</li>
+							<li>Jrock</li>
+						  </ul>
+						</li>
+					  </ul>
+			
+			<em> Disclaimer: This website is created for education and non-commercial use
+				only. It is an assignment for completion of unit, FST10011 Web Technologies
+				for Foundation course from Swinburne University of Technology Sarawak
+				Campus </em>
+				
+				
+	</article>
+	
+	<footer>
+		<div class="content">
+			<p>Copyright &copy 2023 <a href="Musestar.html">Musestar</a> </p>
+			<P> Enjoy our site? Give us your ratings and <a href="feedback.html">feedback! </a></p>
+		</div>
+	</footer>
+</body>
+
+</html>
